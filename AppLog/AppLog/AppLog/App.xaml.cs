@@ -9,12 +9,24 @@ namespace AppLog
 {
     public partial class App : Application
     {
+        public static MyDataBase database;
         public App()
         {
             InitializeComponent();
+            Mylog mylog = new Mylog();
+            mylog.Log("hello Testing");
+        }
 
-            Mypage mypage = new Mypage();
-            mypage.Log("Testing now");
+        public static MyDataBase Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new MyDataBase(DependencyService.Get<IDatabase>().GetLocalFilePath("Applog1.db3"));
+                }
+                return database;
+            }
         }
 
         protected override void OnStart()
