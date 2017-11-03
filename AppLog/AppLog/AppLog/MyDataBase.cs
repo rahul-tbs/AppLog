@@ -9,15 +9,15 @@ namespace AppLog
 {
     public class MyDataBase
     {
-       public readonly SQLiteAsyncConnection db;
+       //public readonly SQLiteAsyncConnection db;
 
-        //readonly SQLiteAsyncConnection db;
+        readonly SQLiteAsyncConnection db;
         public MyDataBase(string dbPath)
         {
             try
             {
                 db = new SQLiteAsyncConnection(dbPath);
-                db.CreateTableAsync<Logdata>().Wait(5000);
+                db.CreateTableAsync<Logdata>();
             }
             catch (Exception e)
             {
