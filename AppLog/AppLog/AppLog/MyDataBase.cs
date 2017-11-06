@@ -17,7 +17,7 @@ namespace AppLog
             try
             {
                 db = new SQLiteAsyncConnection(dbPath);
-                db.CreateTableAsync<Logdata>();
+                db.CreateTableAsync<Logdata>().Wait();
             }
             catch (Exception e)
             {
@@ -28,6 +28,20 @@ namespace AppLog
         public Task<int> Log(Logdata item)
         {
             return db.InsertAsync(item);
+        }
+
+        public Task<List<Logdata>> GetAlluserAsync()
+        {
+            try
+            {
+                return db.Table<Logdata>().ToListAsync();
+            }
+            catch (Exception e)
+            {
+                throw e;
+
+            }
+           
         }
     }
 }

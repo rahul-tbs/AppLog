@@ -19,6 +19,8 @@ namespace AppLog
                 LogTimestamp = DateTime.Now
             };
             App.Database.Log(item);
+            List<Logdata> LocalResult = App.Database.GetAlluserAsync().Result;
+           
         }
 
     }

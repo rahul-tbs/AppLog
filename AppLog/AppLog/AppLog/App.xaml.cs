@@ -15,20 +15,10 @@ namespace AppLog
             InitializeComponent();
             MainPage = new MainPage();
             Mylog mylog = new Mylog();
-            mylog.Log("hi");
+            mylog.Log("poonam");
         }
 
-        public static MyDataBase Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    database = new MyDataBase(DependencyService.Get<IDatabase>().GetLocalFilePath("Applog1.db3"));
-                }
-                return database;
-            }
-        }
+        public static MyDataBase Database => database ?? (database = new MyDataBase(DependencyService.Get<IDatabase>().GetLocalFilePath("Applog1.db3")));
 
         protected override void OnStart()
         {

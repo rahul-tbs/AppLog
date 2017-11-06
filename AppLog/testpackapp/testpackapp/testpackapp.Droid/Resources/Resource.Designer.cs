@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("AppLog.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("testpackapp.Droid.Resource", IsApplication=true)]
 
-namespace AppLog.Droid
+namespace testpackapp.Droid
 {
 	
 	
@@ -26,7 +26,7 @@ namespace AppLog.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::AppLog.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::testpackapp.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
