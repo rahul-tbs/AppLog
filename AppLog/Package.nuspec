@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>LogPackage</id>
+    <version>1.0.0</version>
+    <authors>techbrain</authors>
+    <owners>techbrain</owners>
+    <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
+    <projectUrl>https://github.com/rahul-tbs/AppLog</projectUrl>
+    <!--<iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package description</description>
+    <releaseNotes>Summary of changes made in this release of LogPackage package.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>LogPackage Tag1 Tag2</tags>
+    <dependencies>
+      <dependency id="sqlite-net-pcl" version="1.4.118" />
+      <dependency id="SQLitePCLRaw.bundle_green" version="1.1.5" />
+      <dependency id="SQLitePCLRaw.core" version="1.1.5" />
+    </dependencies>
+    
+  </metadata>
+  <files>
+    <file src="AppLog\AppLog\bin\Release\AppLog.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Vibrate.Abstractions.dll" />
+    <file src="AppLog\AppLog\bin\Release\AppLog.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\Plugin.Vibrate.Abstractions.pdb" />
+    <!--<file src="AppLog\bin\Debug\AppLog.pdb" target="lib\MonoAndroid10\Plugin.Vibrate.Abstractions.pdb" />
+    <file src="AppLog\bin\Debug\AppLog.xml" target="lib\MonoAndroid10\Plugin.Vibrate.Abstractions.xml" />
+    <file src="AppLog\bin\Debug\AppLog.dll" target="lib\MonoAndroid10\Plugin.Vibrate.Abstractions.dll" />-->
+  </files>
+</package>

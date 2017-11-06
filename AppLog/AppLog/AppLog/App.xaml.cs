@@ -15,7 +15,7 @@ namespace AppLog
             InitializeComponent();
             MainPage = new MainPage();
             Mylog mylog = new Mylog();
-            mylog.Log("");
+            mylog.Log("hi");
         }
 
         public static MyDataBase Database
