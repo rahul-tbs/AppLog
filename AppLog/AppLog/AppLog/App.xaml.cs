@@ -14,8 +14,8 @@ namespace AppLog
         {
             InitializeComponent();
             MainPage = new MainPage();
-            Mylog mylog = new Mylog();
-            mylog.Log("poonam");
+            //Mylog mylog = new Mylog();
+            //mylog.Log("poonam");
         }
 
         public static MyDataBase Database => database ?? (database = new MyDataBase(DependencyService.Get<IDatabase>().GetLocalFilePath("Applog1.db3")));

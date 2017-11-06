@@ -5,30 +5,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-
+using AppLog.Model;
 namespace AppLog
 {
    public class Mylog 
     {
         public void Log(string message=null)
         {
-            Debug.WriteLine(message);
+           
             var item = new Logdata
             {
                 LogMessage = message,
-                LogTimestamp = DateTime.Now
+                LogTimestamp = DateTime.Now.ToString()
             };
             App.Database.Log(item);
-            List<Logdata> LocalResult = App.Database.GetAlluserAsync().Result;
-           
+           // Getdata();
         }
 
-    }
-    public class Logdata
-    {
-        public string LogMessage { get; set; }
 
-        public DateTime LogTimestamp { get; set; }
+        public async Task<List<Logdata>> Getdata()
+        {
+            List<Logdata> LocalResult =  App.Database.GetAlluserAsync().Result;
+            return LocalResult;
+        }
+
+
     }
+
+   
 
 }

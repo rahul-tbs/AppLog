@@ -42,6 +42,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Logdata.cs" />
     <Compile Include="Mylog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MyDataBase.cs" />
