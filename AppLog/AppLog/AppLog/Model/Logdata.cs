@@ -14,4 +14,12 @@ namespace AppLog.Model
         public string LogMessage { get; set; }
         public string LogTimestamp { get; set; }
     }
+
+    public class PostLogdata
+    {
+       
+        public List<Logdata> saveLogdata { get; set; }
+      
+    }
+
 }

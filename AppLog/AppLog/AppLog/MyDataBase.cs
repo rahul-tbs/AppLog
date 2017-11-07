@@ -45,5 +45,13 @@ namespace AppLog
             }
            
         }
+
+        public void Clearlog()
+        {
+            db.DropTableAsync<Logdata>();
+            db.CreateTableAsync<Logdata>();
+        }
+
+
     }
 }

@@ -15,10 +15,24 @@ namespace AppLog
             InitializeComponent();
             MainPage = new MainPage();
             //Mylog mylog = new Mylog();
-            //mylog.Log("poonam");
+            //mylog.Log("poonam Api test2");
         }
 
-        public static MyDataBase Database => database ?? (database = new MyDataBase(DependencyService.Get<IDatabase>().GetLocalFilePath("Applog1.db3")));
+         public static MyDataBase Database => database ?? (database = new MyDataBase(DependencyService.Get<IDatabase>().GetLocalFilePath("Applog1.db3")));
+        //public static MyDataBase Database
+        //{
+        //    get
+        //    {
+        //        if (database == null)
+        //        {
+        //            database = new MyDataBase(DependencyService.Get<IDatabase>().GetLocalFilePath("Applog1.db3"));
+        //        }
+        //        return database;
+        //    }
+        //}
+
+
+
 
         protected override void OnStart()
         {

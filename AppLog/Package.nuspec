@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>LogPackage</id>
-    <version>1.1.0</version>
+    <version>1.3.0</version>
     <authors>techbrain</authors>
     <owners>techbrain</owners>
     <!--<licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>-->
@@ -17,6 +17,10 @@
       <dependency id="sqlite-net-pcl" version="1.4.118" />
       <dependency id="SQLitePCLRaw.bundle_green" version="1.1.7" />
       <dependency id="SQLitePCLRaw.core" version="1.1.7" />
+	  <dependency id="Newtonsoft.Json" version="10.0.3" />
+	  <dependency id="Microsoft.Net.Http" version="2.2.29" />
+	   <dependency id="Microsoft.Bcl.Build" version="1.0.21" />
+	   <dependency id="Microsoft.Bcl" version="1.1.10" />
     </dependencies>
   </metadata>
   <files>
